@@ -25,7 +25,6 @@ class RecipeCard extends HTMLElement {
       a {
         text-decoration: none;
       }
-
       a:hover {
         text-decoration: underline;
       }
@@ -41,7 +40,6 @@ class RecipeCard extends HTMLElement {
         padding: 0 16px 16px 16px;
         width: 178px;
       }
-
       div.rating {
         align-items: center;
         column-gap: 5px;
@@ -54,7 +52,6 @@ class RecipeCard extends HTMLElement {
         object-fit: scale-down;
         width: 78px;
       }
-
       article > img {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -63,7 +60,6 @@ class RecipeCard extends HTMLElement {
         margin-left: -16px;
         width: calc(100% + 32px);
       }
-
       p.ingredients {
         height: 32px;
         line-height: 16px;
@@ -74,7 +70,6 @@ class RecipeCard extends HTMLElement {
       p.organization {
         color: black !important;
       }
-
       p.title {
         display: -webkit-box;
         font-size: 16px;
@@ -84,7 +79,6 @@ class RecipeCard extends HTMLElement {
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
       }
-
       p:not(.title), span, time {
         color: #70757A;
         font-size: 12px;
@@ -133,7 +127,7 @@ class RecipeCard extends HTMLElement {
       <p class="organization">${data.organization}</p>
       <div class="rating">
         <span>${data.rating}</span>
-        <img src="/assets/images/icons/${data.rating}-star.svg" alt="${data.rating} stars">
+        <img src="./assets/images/icons/${data.rating}-star.svg" alt="${data.rating} stars">
         <span>(${data.numRatings})</span>
       </div>
       <time>${data.lengthTime}</time>
